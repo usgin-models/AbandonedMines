@@ -76,12 +76,12 @@ http://schemas.opengis.net/gml/3.1.1/profiles/gmlsfProfile/1.0.0/gmlsf.xsd </gml
 							<xs:documentation>Name or number of the lease of the mine identified by the Feature URI. The LeaseName may be a concatenation of the Lease Owner and Number.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-						<xs:element name="LeaseOwner" type="xs:string" minOccurs="0">
+					<xs:element name="LeaseOwner" type="xs:string" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>Name of the lease owner of the mine identified by the FeatureURI.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-						<xs:element name="LeaseNo" type="xs:string" minOccurs="0">
+					<xs:element name="LeaseNo" type="xs:string" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>Lease number of the mine identified by the FeatureURI.</xs:documentation>
 						</xs:annotation>
@@ -126,7 +126,7 @@ http://schemas.opengis.net/gml/3.1.1/profiles/gmlsfProfile/1.0.0/gmlsf.xsd </gml
 							<xs:documentation>Date on which data for the mine identified by the FeatureURI, was or will be made public.  If no date is reported, no confidential information is on moratorium. Use format YYYY-MM-DD.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-						<xs:element name="Field" type="xs:string" minOccurs="0">
+					<xs:element name="Field" type="xs:string" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>Name of coal or other mineral field in which the mine identified by the FeatureURI is located. Delimit multiple values with the pipe character '|'.</xs:documentation>
 						</xs:annotation>
@@ -212,22 +212,22 @@ http://schemas.opengis.net/gml/3.1.1/profiles/gmlsfProfile/1.0.0/gmlsf.xsd </gml
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="Mine-City_Distance_km" type="xs:double" minOccurs="0">
-					<xs:annotation>
+						<xs:annotation>
 							<xs:documentation>Distance in kilometers (km) from mine to nearest population center.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="WatershedName" type="xs:double" minOccurs="0">
-					<xs:annotation>
+					<xs:element name="WatershedName" type="xs:string" minOccurs="0">
+						<xs:annotation>
 							<xs:documentation>Name of the watershed located above, or in communication with, mine workings. Delimit multiple watershed names with the pipe character '|'.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
 					<xs:element name="HUCode" type="xs:double" minOccurs="0">
-					<xs:annotation>
+						<xs:annotation>
 							<xs:documentation>Hydrologic Unit Code (HUC/HUCode). 12 digits. The United States is divided and sub-divided into successively smaller Hydrologic Units (HU) which are classified into four levels: regions, sub-regions, accounting units, and cataloging units. Cataloging Units sometimes are called "watersheds".  The hydrologic units are arranged or nested within each other, from the largest geographic area (regions) to the smallest geographic area (cataloging units). Each hydrologic unit is identified by a unique hydrologic unit code (HUC) based on the four levels of classification in the hydrologic unit system. http://water.usgs.gov/GIS/huc.html</xs:documentation>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="HydroNarrative" type="xs:double" minOccurs="0">
-					<xs:annotation>
+					<xs:element name="HydroNarrative" type="xs:string" minOccurs="0">
+						<xs:annotation>
 							<xs:documentation>Free text used to report watershed/stream information.</xs:documentation>
 						</xs:annotation>
 					</xs:element>
